@@ -2,7 +2,7 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title>Chá Rifa | Arthur Soares Batista</title>
+  <title>Lista de Presentes | Chá Rifa Arthur</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <style>
@@ -10,25 +10,23 @@
       margin: 0;
       padding: 0;
       box-sizing: border-box;
-      font-family: "Arial", sans-serif;
+      font-family: Arial, sans-serif;
     }
 
     body {
       background-color: #e9f7f7;
       color: #333;
-      line-height: 1.6;
     }
 
-    /* ====== TOPO / CAPA ====== */
+    /* ===== CAPA ===== */
     .header {
-      background: url("capa_arthur1.png") no-repeat center top;
+      background: url("capa_arthur.png") no-repeat center top;
       background-size: cover;
-      min-height: 380px;
+      min-height: 360px;
       display: flex;
-      flex-direction: column;
-      justify-content: flex-end;
-      align-items: center;
-      padding-bottom: 30px;
+      align-items: flex-end;
+      justify-content: center;
+      padding-bottom: 25px;
     }
 
     .menu {
@@ -40,78 +38,91 @@
     }
 
     .menu a {
-      color: #ffffff;
+      color: #fff;
       text-decoration: none;
       font-weight: bold;
       font-size: 14px;
       text-transform: uppercase;
     }
 
-    .menu a:hover {
-      text-decoration: underline;
-    }
-
-    /* ====== CONTEÚDO ====== */
+    /* ===== CONTEÚDO ===== */
     .container {
-      max-width: 900px;
+      max-width: 1100px;
       margin: 40px auto;
       padding: 0 20px;
-      text-align: center;
     }
 
     .title {
+      text-align: center;
       font-size: 28px;
       color: #18b5ad;
-      margin-bottom: 20px;
+      margin-bottom: 40px;
     }
 
-    .text {
-      font-size: 16px;
+    /* ===== GRID DE PRODUTOS ===== */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 30px;
+    }
+
+    .card {
+      background: #ffffff;
+      border-radius: 14px;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+    }
+
+    .card img {
+      width: 100%;
+      max-height: 200px;
+      object-fit: contain;
+      margin-bottom: 15px;
+    }
+
+    .card h3 {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    .price {
+      font-size: 20px;
+      font-weight: bold;
+      color: #18b5ad;
+      margin-bottom: 8px;
+    }
+
+    .rifas {
+      font-size: 14px;
+      color: #666;
       margin-bottom: 18px;
     }
 
-    /* ====== BOTÕES ====== */
-    .buttons {
-      margin-top: 40px;
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 20px;
-    }
-
     .btn {
-      background-color: #2fc4bd;
-      color: #ffffff;
-      padding: 14px 26px;
+      display: inline-block;
+      background: #2fc4bd;
+      color: #fff;
+      padding: 12px 22px;
       border-radius: 8px;
       text-decoration: none;
       font-weight: bold;
-      font-size: 14px;
       text-transform: uppercase;
       transition: background 0.3s;
     }
 
     .btn:hover {
-      background-color: #23aaa4;
+      background: #23aaa4;
     }
 
-    /* ====== RODAPÉ ====== */
+    /* ===== RODAPÉ ===== */
     footer {
       margin-top: 60px;
-      padding: 30px 20px;
-      background-color: #ffffff;
+      background: #ffffff;
+      padding: 25px;
       text-align: center;
       font-size: 14px;
       color: #777;
-    }
-
-    @media (max-width: 600px) {
-      .title {
-        font-size: 22px;
-      }
-      .text {
-        font-size: 15px;
-      }
     }
   </style>
 </head>
@@ -130,58 +141,49 @@
 
   <!-- CONTEÚDO -->
   <main class="container">
-    <h1 class="title">É tempo de muita alegria!!! ✨</h1>
+    <h1 class="title">Lista de Presentes 💙</h1>
 
-    <p class="text">
-      ✨Meus saudosos cumprimentos a todos!!!✨  
-      É com muito entusiasmo que me apresento a todos vocês.
-      Eu sou o baby Árthur, e eu estou super animado pra conhecer este mundo iluminado
-      e compartilhar minhas boas vindas com vocês, que já estão aí do outro lado.
-    </p>
+    <div class="grid">
 
-    <p class="text">
-      Por isso eu, a mamãe Kênya e o Papai Sérgio fazemos questão de convidá-los
-      a fazer parte desse momento único e especial para nós,
-      participando do meu Chá Rifa.
-    </p>
+      <!-- RN 18 -->
+      <div class="card">
+        <img src="RN18.png" alt="Fralda RN 18 unidades">
+        <h3>Fralda RN – 18 unidades</h3>
+        <div class="price">R$ 20,99</div>
+        <div class="rifas">🎟️ 1 rifa</div>
+        <a class="btn" href="https://invoice.infinitepay.io/math-skardec/1luc0UV6bL/" target="_blank">
+          Presentear
+        </a>
+      </div>
 
-    <p class="text">
-      Neste espaço criado com muito amor, teremos o carinho de compartilhar
-      com vocês alguns detalhes dessa fase tão mágica e inesquecível da minha nova vida.
-    </p>
+      <!-- RN 36 -->
+      <div class="card">
+        <img src="RN36.png" alt="Fralda RN 36 unidades">
+        <h3>Fralda RN – 36 unidades</h3>
+        <div class="price">R$ 39,99</div>
+        <div class="rifas">🎟️ 2 rifas</div>
+        <a class="btn" href="https://invoice.infinitepay.io/math-skardec/1luc0UV6bL/" target="_blank">
+          Presentear
+        </a>
+      </div>
 
-    <p class="text">
-      Para participar dessa nossa primeira interação com o mundo e ainda concorrer
-      a um prêmio que eu mesmo terei a honra de entregar ao ganhador,
-      basta me presentear! 🎁✨
-    </p>
+      <!-- RN 50 -->
+      <div class="card">
+        <img src="RN50.png" alt="Fralda RN 50 unidades">
+        <h3>Fralda RN – 50 unidades</h3>
+        <div class="price">R$ 49,99</div>
+        <div class="rifas">🎟️ 3 rifas</div>
+        <a class="btn" href="https://invoice.infinitepay.io/math-skardec/1luc0UV6bL/" target="_blank">
+          Presentear
+        </a>
+      </div>
 
-    <p class="text">
-      <strong>É muito simples:</strong><br><br>
-      1️⃣ Acesse a lista de presentes<br>
-      2️⃣ Escolha o que desejar<br>
-      3️⃣ Receba seus números da sorte diretamente no e-mail<br><br>
-      Agora vamos só aguardar o dia do sorteio! 🎉
-    </p>
-
-    <p class="text">
-      Ah, deixe pra mim baby Árthur aquele recadinho carinhoso no nosso mural.
-      Assim que eu crescer eu vou guardar essa memória da minha primeira interação
-      com todos vocês moradores do outro lado.
-      Cada mensagem vai aquecer ainda mais os nossos corações. 🥰
-    </p>
-
-    <!-- BOTÕES -->
-    <div class="buttons">
-      <a class="btn" href="">Ver Lista de Presentes</a>
-      <a class="btn" href="">Mural de Recados</a>
-      <a class="btn" href="">Sobre a Rifa</a>
     </div>
   </main>
 
   <!-- RODAPÉ -->
   <footer>
-    © Chá Rifa do Arthur Soares Batista • Feito com amor 💙
+    © Chá Rifa do Arthur Soares Batista • Obrigado pelo carinho 💙
   </footer>
 
 </body>
